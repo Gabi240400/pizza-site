@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>News</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    <script src="jquery.js"></script>
+  </head>
+	<body>
+      <header>
+        <img src="logo.jpg" alt="Quatro Stagioni Pizza" width="132" height="85.3" id="logo">
+      </header>
+      <nav>
+        <a href="index.html">Home</a>
+        <div class="dropup">
+          <a href="#recepies" class="dropbtn">Recepies</a>
+          <div class="dropup-content">
+            <a href="#dough" class="drop-up">Dough</a>
+            <a href="#sauce" class="drop-up">Sauce</a>
+          </div>
+        </div>
+        <a href="#best-restaurants">Best restaurants in your area</a>
+        <a href="news.html" target="_blank">This weeks's news</a>
+        <a href="log_in.html">Log in</a>
+        <a href="sign_up.html">Sign up</a>
+      </nav>
+      <main>
+      <h1>This week's news!</h1>
+      <aside>You come here if you want to see the lates news about your favorite food</aside>
+  		<section>
+        <h3>Top 3 Pizzas this week:</h3>
+        <ol start="2">
+          <li>Diavola</li>
+          <li>Peasant
+            <ol type="i">
+              <li>with green peas</li>
+              <li>without green peas</li>
+            </ol></li>
+          <li>Hawaiian</li>
+        </ol>
+        <details>
+          <summary>Number 1 Pizza</summary>
+          <span>As always, the number 1 pizza is your favorite one!</span>
+        </details>
+      </section>
+      <br>
+      <article>
+        <h3>
+          The most important question we should ask ourselves this week:<br>What's the most important part of a pizza?
+        </h3>
+        <br>
+        I think it depends.
+        <br>
+        We should take into consideration:
+        <ul>
+          <li>excellent dough</li>
+          <li>fresh toppings
+            <ul>
+              <li>onions</li>
+              <li>pineapple</li>
+              <li>mushrooms</li>
+              <li>peppers</li>
+              <li>salami</li>
+              <li>pepperoni</li>
+            </ul></li>
+          <li>delicious tomato sauce
+            <ul>
+              <li>spices
+                <ul>
+                  <li>thyme</li>
+                  <li>basil</li>
+                  <li>pepper</li>
+                  <li>garlic</li>
+                </ul></li>
+              <li>tomatoes</li>
+              <li>salt</li>
+              <li>sugar</li>
+            </ul></li>
+          <li>cooking conditions</li>
+        </ul>
+        <span>Everybody will think something different. The most important part for me is definitely the dough and cooking it properly. My worst nightmare is uncooked dough!</span>
+        <br>
+        Ask yourself this question now. What's the most important part for you? Don't forget to let us know!
+      </article>
+      <br>
+      <section>
+        <h3>How much does making a tasty sauce cost?</h3>
+        <img src="pizza-sauce.jpg" class = "show-image" style="width: 10%">
+        <table>
+          <tr>
+            <th>Ingredients</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Tomatoes</td>
+            <td>250g</td>
+            <td>1.5$</td>
+          </tr>
+          <tr>
+            <td>Sugar</td>
+            <td>20g</td>
+            <td>0.1$</td>
+          </tr>
+          <tr>
+            <td>Spices</td>
+            <td>30g</td>
+            <td>0.5$</td>
+          </tr>
+          <tr>
+            <td>Salt</td>
+            <td>10g</td>
+            <td>0.1$</td>
+          </tr>
+          <tr>
+            <td colspan="3">Sum: 2.2$</td>
+          </tr>
+        </table>
+        <span>Filters: </span>
+          <input type="radio" id="PoCON" name="name" value="Less than 1$">Less than 1$
+          <input type="radio" id="default" value="Default" name="name">Default
+          <br>
+          <label for="search">Search for ingredients is this table: </label>
+          <input type="text" id="search" placeholder="live table search">
+          <br>
+      </section>
+      <br><section>
+        <h3>Search for the ingredients you need to make a tasty margherita pizza!</h3>
+        <input type="text" class="live-search-box" placeholder="search here" />
+
+        <ul class="live-search-list">
+        <li>Lorem</li>
+        <li>ipsum</li>
+        <li>dolor</li>
+        <li>sit</li>
+        <li>amet</li>
+        </ul>
+      </section>
+    </main>
+      <footer>
+        <center>
+          <p><img src="pizza-slice-solid.svg" style="width: 1%; height: auto;">Author: Gabi Constantinescu</p>
+            <p><a href="mailto:gabictinescu@yahoo.com">gabictinescu@yahoo.com</a></p>
+          </center>
+      </footer>
+	</body>
+</html>

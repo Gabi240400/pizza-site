@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+	<body>
+      <header>
+        <img src="logo.jpg" alt="Quatro Stagioni Pizza" width="132" height="85.3" id="logo">
+      </header>
+      <nav>
+        <a href="index.html">Home</a>
+        <div class="dropup">
+          <a href="#recepies" class="dropbtn">Recepies</a>
+          <div class="dropup-content">
+            <a href="#dough" class="drop-up">Dough</a>
+            <a href="#sauce" class="drop-up">Sauce</a>
+          </div>
+        </div>
+        <a href="#best-restaurants">Best restaurants in your area</a>
+        <a href="news.html" target="_blank">This weeks's news</a>
+        <a href="log_in.html">Log in</a>
+        <a href="sign_up.html">Sign up</a>
+      </nav>
+
+      <main>
+    		<h1>Log in</h1>
+    			<form action="#">
+            <fieldset>
+              <legend>Welcome back! We missed you!</legend>
+      				<label for="email">Email:</label><br>
+      				<input type="text" id="email" name="email" oninput="validateEmail(this.id)"><br>
+
+      				<label for="password">Password:</label><br>
+      				<input type="password" id="password" name="password" oninput="validatePwd(this.id)"><br><br>
+      				
+      				<input type="submit" value="Submit"><br><br>
+
+              <input type="checkbox" value="Remember" checked>
+              <label> Remember this user</label><br>
+            </fieldset>
+    			</form> 
+      </main>
+      <footer>
+        <center>
+          <p><img src="pizza-slice-solid.svg" style="width: 1%; height: auto;">Author: Gabi Constantinescu</p>
+            <p><a href="mailto:gabictinescu@yahoo.com">gabictinescu@yahoo.com</a></p>
+          </center>
+      </footer>
+	</body>
+</html>

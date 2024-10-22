@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+	<body>
+      <header>
+        <img src="logo.jpg" alt="Quatro Stagioni Pizza" width="132" height="85.3" id="logo">
+      </header>
+      <nav>
+        <a href="index.html">Home</a>
+        <div class="dropup">
+          <a href="#recepies" class="dropbtn">Recepies</a>
+          <div class="dropup-content">
+            <a href="#dough" class="drop-up">Dough</a>
+            <a href="#sauce" class="drop-up">Sauce</a>
+          </div>
+        </div>
+        <a href="#best-restaurants">Best restaurants in your area</a>
+        <a href="news.html" target="_blank">This weeks's news</a>
+        <a href="log_in.html">Log in</a>
+        <a href="sign_up.html">Sign up</a>
+      </nav>
+
+    <main>
+  		<h1>Sign up</h1>
+  			<form accept-charset="utf-8" action="#">
+          <fieldset>
+            <legend>A pizza lover:</legend>
+    				<label>Email:</label><br>
+    				<input type="text"><br>
+
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" maxlength="100" oninput="validateNameInput(this.id)"><br>
+
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" maxlength="100" oninput="validateNameInput(this.id)"><br>
+
+            <label for="phone">Phone:</label><br>
+            <input type="text" id="phone" name="phone" oninput="validatePhone(this.id)"><br>
+
+            <label for="date">Date of birth (dd/mm/yyyy):</label><br>
+            <input type="text" id="date" name="date" oninput="validateDate(this.id, 'll/zz/aaaa')"><br>
+
+            <label for="countries">Country:</label><br>
+            <input list="countries" name="country", id="country" onchange="generateCities()">
+            <datalist id="countries"></datalist><br>
+
+            <label for="cities">City:</label><br>
+            <input list="cities" id="city" name="city">
+            <datalist id="cities"></datalist><br>
+
+    				<label>Password:</label><br>
+    				<input type="text"><br>
+
+            <label>Confirm password:</label><br>
+            <input type="text"><br>
+
+            <label>Choose your favorite pizza</label><br>
+            <input list="favorite_pizza">
+            <datalist id="favorite_pizza">
+              <option>Quatro Staggioni</option>
+              <option>Quatro Formaggi</option>
+              <option>Diavola</option>
+              <option>Hawaiian</option>
+              <option>Peasant</option>
+              <option>Deep Dish</option>
+              <option>Margherita</option>
+            </datalist><br>
+
+            <label>Please select your gender</label><br>
+            <input type="radio" name="gender">
+            <label>Female</label><br>
+            <input type="radio" name="gender">
+            <label>Male</label><br>
+            <input type="radio" name="gender">
+            <label>Other</label><br>
+            <input type="radio" name="gender" checked>
+            <label>I don't want to say</label><br>
+
+            <label>Tell us a bit (or a lot) about yourself!</label><br>
+            <textarea rows="10" cols="70"></textarea><br><br>
+
+            <label>Time for a weird question! How much money are you willing to spend on a good pizza?</label><br>
+            <input type="number" name="money" step="10"><br><br>
+    				
+    				<input type="submit" value="Create an account">
+          </fieldset>
+  			</form> 
+      </main>
+      <footer>
+        <center>
+          <p><img src="pizza-slice-solid.svg" style="width: 1%; height: auto;">Author: Gabi Constantinescu</p>
+            <p><a href="mailto:gabictinescu@yahoo.com">gabictinescu@yahoo.com</a></p>
+          </center>
+      </footer>
+      <script>
+        const list = document.getElementById('countries'); 
+        ['Romania', 'USA'].forEach(item => {
+          let option = document.createElement('option');
+          option.value = item;   
+          list.appendChild(option);
+        });
+      </script>
+	</body>
+</html>

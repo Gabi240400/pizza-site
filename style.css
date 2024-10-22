@@ -1,0 +1,219 @@
+header {
+  background-image: linear-gradient(to right, #0a0d0e, #0a0d0e, #f8e7db 90%);
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+body {
+	background-color: #f8e7db;
+	font-family: Arial;
+}
+
+#logo:hover {
+	animation: pulse 0.5s ease-in infinite;
+}
+
+@keyframes pulse{
+  25%  {transform: scale(0.9);}
+  75%  {transform: scale(1.1);}
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: none;
+}
+
+main {
+	flex-grow: 1;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #0a0d0e;
+  z-index: 1;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #ddd;
+  color: black;
+}
+
+main {
+  margin-bottom: 30px;
+}
+
+footer {
+	margin-bottom: 50px;
+}
+
+/* Dropup Button */
+.dropbtn {
+  background-color: #0a0d0e;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropup content */
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropup content (Hidden by Default) */
+.dropup-content {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  background-color: #0a0d0e;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropup */
+.dropup-content a {
+	float: none;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+
+}
+
+/* Change color of dropup links on hover */
+.dropup-content a:hover {background-color: #ddd}
+
+/* Show the dropup menu on hover */
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+/* Change the background color of the dropup button when the dropup content is shown */
+.dropup:hover .dropbtn {
+  background-color: #ddd;
+}
+
+table, th, td {
+	border: 1px solid;
+	text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th {
+	background-color: #0a0d0e;
+	color: white;
+	font-weight: normal;
+}
+
+@counter-style repeating-emoji {
+  system: cyclic;
+  symbols: "\1F355";
+  suffix: " ";
+}
+
+ul {
+  list-style-type: repeating-emoji;
+}
+
+.container {
+  position: relative;
+  width: 910;
+  height: 650;
+}
+
+.image {
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 650;
+  width: 910;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #0a0d0e;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+input {
+	border-radius: 4px;
+	border: none;
+  border-bottom: 2px solid black;
+}
+
+textarea {
+	border-radius: 4px;
+	border: none;
+}
+
+.live-search-list {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+padding: 1em;
+background-color: black;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+font-family: 'Lato', sans-serif;
+color: #fff;
+}
+
+.live-search-box {
+width: 100%;
+display: block;
+padding: 1em;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+border: 1px solid #3498db;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+.live-search-list li {
+color: fff;
+list-style: none;
+padding: 0;
+margin: 5px 0;
+}
